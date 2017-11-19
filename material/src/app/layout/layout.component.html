@@ -1,0 +1,26 @@
+  <app-header (navToggle)="mainNav.toggle()"></app-header>
+<!--<app-sidebar></app-sidebar>-->
+<section class="main-container">
+      
+   <mat-sidenav-container class="example-container">
+  <mat-sidenav #mainNav class="sidebar-panel example-sidenav" >
+   
+    <app-sidenav></app-sidenav>
+  </mat-sidenav>
+
+  <div class="example-sidenav-content">
+   <div fxflex  fxLayout="row">
+   
+   </div>
+
+    <router-outlet></router-outlet>
+    <mat-card class="card-demo">
+        <mat-card-footer style="width:95%">
+            <h3>Footer Part</h3>
+          </mat-card-footer>
+        </mat-card>
+  </div>
+
+</mat-sidenav-container>
+    
+</section>

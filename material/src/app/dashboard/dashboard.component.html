@@ -1,0 +1,289 @@
+
+<h1>Dashboard</h1>
+
+<!--<mat-card class="card-demo" >
+  <mat-card-title>Responsive Layout Directions</mat-card-title>
+  <mat-card-subtitle>Layout direction changes to 'column' for 'xs' or 'sm' viewport sizes:
+  </mat-card-subtitle>
+  <mat-card-content>
+    <div class="containerX" id="main">
+     
+    
+     <div fxflex  fxLayout="row" fxLayout.xs="column" fxLayout.sm="row" 
+           class="coloredContainerX box">
+        <div fxFlex="50%"> I'm above on mobile, and to the left on larger devices.</div>
+        <div fxFlex> I'm below on mobile, and to the right on larger devices.</div>
+      </div>
+    </div>
+   
+    
+  </mat-card-content>
+</mat-card>
+<div fxLayout="row" fxLayoutWrap="wrap" >
+    <div  fxFlex="100%" fxFlex.gt-sm="25" fxFlex.gt-xs="50" >
+      <mat-card  class="card-widget mat-card">
+        <div  mat-card-widget>
+          <button  class="shadow-none mat-mini-fab mat-primary" color="primary" mat-card-icon="" mat-mini-fab=""><span class="mat-button-wrapper">
+            <mat-icon  class="mat-icon material-icons" role="img" aria-hidden="true">local_offer</mat-icon>
+          </span><div class="mat-button-ripple mat-ripple mat-button-ripple-round" matripple=""></div><div class="mat-button-focus-overlay"></div></button>
+          <div  class="pl-1 pr-1">
+            <h2  mat-card-widget-title>103</h2>
+            <p  class="mat-text-muted text-md">Campaigns</p>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+    <div  fxFlex="100%" fxFlex.gt-sm="25" fxFlex.gt-xs="50" >
+      <mat-card  class="card-widget mat-card">
+        <div  mat-card-widget>
+          <button  class="shadow-none mat-mini-fab mat-primary" color="primary" mat-card-icon="" mat-mini-fab=""><span class="mat-button-wrapper">
+            <mat-icon  class="mat-icon material-icons" role="img" aria-hidden="true">local_offer</mat-icon>
+          </span><div class="mat-button-ripple mat-ripple mat-button-ripple-round" matripple=""></div><div class="mat-button-focus-overlay"></div></button>
+          <div  class="pl-1 pr-1">
+            <h2  mat-card-widget-title>103</h2>
+            <p  class="mat-text-muted text-md">Campaigns</p>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+  
+    <div  fxFlex="100%" fxFlex.gt-sm="25" fxFlex.gt-xs="50" >
+      <mat-card  class="card-widget mat-card">
+        <div  mat-card-widget>
+          <button  class="shadow-none mat-mini-fab mat-primary" color="primary" mat-card-icon="" mat-mini-fab=""><span class="mat-button-wrapper">
+            <mat-icon  class="mat-icon material-icons" role="img" aria-hidden="true">local_offer</mat-icon>
+          </span><div class="mat-button-ripple mat-ripple mat-button-ripple-round" matripple=""></div><div class="mat-button-focus-overlay"></div></button>
+          <div  class="pl-1 pr-1">
+            <h2  mat-card-widget-title>103</h2>
+            <p  class="mat-text-muted text-md">Campaigns</p>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+  
+    <div  fxFlex="100%" fxFlex.gt-sm="25" fxFlex.gt-xs="50" >
+      <mat-card  class="card-widget mat-card">
+        <div  mat-card-widget>
+          <button  class="shadow-none mat-mini-fab mat-primary" color="primary" mat-card-icon="" mat-mini-fab=""><span class="mat-button-wrapper">
+            <mat-icon  class="mat-icon material-icons" role="img" aria-hidden="true">local_offer</mat-icon>
+          </span><div class="mat-button-ripple mat-ripple mat-button-ripple-round" matripple=""></div><div class="mat-button-focus-overlay"></div></button>
+          <div  class="pl-1 pr-1">
+            <h2  mat-card-widget-title>103</h2>
+            <p  class="mat-text-muted text-md">Campaigns</p>
+          </div>
+        </div>
+      </mat-card>
+    </div>
+     </div>-->
+
+     <h1>Responsive Angular</h1>
+     <div fxLayout="row" fxLayoutWrap="wrap" >
+     <div  fxFlex="100%" fxFlex.gt-sm="25" fxFlex.gt-xs="50" >
+     <mat-card class="example-card">
+        <mat-card-header>
+         
+          <mat-card-title>Shiba Inu</mat-card-title>
+          
+        </mat-card-header>
+        
+        <mat-card-content >
+            <mat-grid-list [cols]="cols | async" gutterSize="1px" rowHeight="7:1"  >
+                <mat-grid-tile *ngFor="let tile of gridlist" [style.background]="'lightblue'">
+                    {{tile.text}}
+                  </mat-grid-tile>
+              </mat-grid-list>
+              <mat-grid-list [cols]="cols | async" gutterSize="1px" rowHeight="7:1"  >
+                  <mat-grid-tile *ngFor="let tile of gridlist" [style.background]="'lightblue'">
+                      {{tile.text}}
+                    </mat-grid-tile>
+                </mat-grid-list>
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-button>LIKE</button>
+          
+        </mat-card-actions>
+      </mat-card>
+     
+</div>
+<div  fxFlex="100%" fxFlex.gt-sm="25" fxFlex.gt-xs="50" >
+    <mat-card class="example-card">
+       <mat-card-header>
+        
+         <mat-card-title>Shiba Inu</mat-card-title>
+         
+       </mat-card-header>
+       
+       <mat-card-content >
+           <mat-grid-list [cols]="cols | async" gutterSize="1px" rowHeight="7:1"  >
+               <mat-grid-tile *ngFor="let tile of gridlist" [style.background]="'lightblue'">
+                   {{tile.text}}
+                 </mat-grid-tile>
+             </mat-grid-list>
+             <mat-grid-list [cols]="cols | async" gutterSize="1px" rowHeight="7:1"  >
+                 <mat-grid-tile *ngFor="let tile of gridlist" [style.background]="'lightblue'">
+                     {{tile.text}}
+                   </mat-grid-tile>
+               </mat-grid-list>
+       </mat-card-content>
+       <mat-card-actions>
+         <button mat-button>LIKE</button>
+         
+       </mat-card-actions>
+     </mat-card>
+    
+</div>
+<div  fxFlex="100%" fxFlex.gt-sm="25" fxFlex.gt-xs="50" >
+    <mat-card class="example-card">
+       <mat-card-header>
+        
+         <mat-card-title>Shiba Inu</mat-card-title>
+         
+       </mat-card-header>
+       
+       <mat-card-content >
+           <mat-grid-list [cols]="cols | async" gutterSize="1px" rowHeight="7:1"  >
+               <mat-grid-tile *ngFor="let tile of gridlist" [style.background]="'lightblue'">
+                   {{tile.text}}
+                 </mat-grid-tile>
+             </mat-grid-list>
+             <mat-grid-list [cols]="cols | async" gutterSize="1px" rowHeight="7:1"  >
+                 <mat-grid-tile *ngFor="let tile of gridlist" [style.background]="'lightblue'">
+                     {{tile.text}}
+                   </mat-grid-tile>
+               </mat-grid-list>
+       </mat-card-content>
+       <mat-card-actions>
+         <button mat-button>LIKE</button>
+         
+       </mat-card-actions>
+     </mat-card>
+    
+</div>
+<div  fxFlex="100%" fxFlex.gt-sm="25" fxFlex.gt-xs="50" >
+    <mat-card class="example-card">
+       <mat-card-header>
+        
+         <mat-card-title>Shiba Inu</mat-card-title>
+         
+       </mat-card-header>
+       
+       <mat-card-content >
+           <mat-grid-list [cols]="cols | async" gutterSize="1px" rowHeight="7:1"  >
+               <mat-grid-tile *ngFor="let tile of gridlist" [style.background]="'lightblue'">
+                   {{tile.text}}
+                 </mat-grid-tile>
+             </mat-grid-list>
+             <mat-grid-list [cols]="cols | async" gutterSize="1px" rowHeight="7:1"  >
+                 <mat-grid-tile *ngFor="let tile of gridlist" [style.background]="'lightblue'">
+                     {{tile.text}}
+                   </mat-grid-tile>
+               </mat-grid-list>
+       </mat-card-content>
+       <mat-card-actions>
+         <button mat-button>LIKE</button>
+         
+       </mat-card-actions>
+     </mat-card>
+    
+</div>
+</div>
+
+
+
+
+<!--Test2-->
+
+
+      <h2>Ratio-height grid list</h2>
+      <mat-grid-list [cols]="cols | async" [rowHeight]="ratio" gutterSize="4px">
+        <mat-grid-tile *ngFor="let tile of tiles" [style.background]="'lightblue'">
+          <mat-card>
+          <mat-card-header>
+                
+                 <mat-card-title>Shiba Inu</mat-card-title>
+                 
+               </mat-card-header>
+               
+               <mat-card-content>
+                  {{tile.text}}
+               </mat-card-content>
+               <mat-card-actions>
+                 <button mat-button>LIKE</button>
+                 
+               </mat-card-actions>
+             </mat-card>
+        </mat-grid-tile>
+      </mat-grid-list>
+    
+
+
+<!--Test2 END-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+     <div class="demo-grid-list">
+        <mat-card>
+          <mat-card-title>Basic grid list</mat-card-title>
+          <mat-card-content class="demo-basic-list">
+            <mat-grid-list cols="4" [rowHeight]="basicRowHeight">
+              <mat-grid-tile> One </mat-grid-tile>
+              <mat-grid-tile> Two </mat-grid-tile>
+              <mat-grid-tile> Three </mat-grid-tile>
+              <mat-grid-tile> Four </mat-grid-tile>
+            </mat-grid-list>
+          </mat-card-content>
+        </mat-card>
+      
+       
+        <mat-card>
+          <mat-card-title>Ratio-height grid list</mat-card-title>
+          <mat-card-content class="demo-ratio-list">
+            <mat-grid-list cols="2" [rowHeight]="ratio" gutterSize="4px">
+              <mat-grid-tile *ngFor="let tile of tiles" [style.background]="'lightblue'">
+                {{tile.text}}
+              </mat-grid-tile>
+            </mat-grid-list>
+          </mat-card-content>
+          <mat-card-actions>
+            <p>Change ratio: <input [(ngModel)]="ratio"></p>
+          </mat-card-actions>
+        </mat-card>
+      
+        <mat-card>
+          <mat-card-title>Fit-height grid list</mat-card-title>
+          <mat-card-content class="demo-fit-list">
+            <mat-grid-list cols="2" rowHeight="fit" [gutterSize]="ratioGutter"
+                          [style.height]="fitListHeight">
+              <mat-grid-tile *ngFor="let tile of tiles" [style.background]="'#F1EBBA'">
+                {{tile.text}}
+              </mat-grid-tile>
+            </mat-grid-list>
+          </mat-card-content>
+          <mat-card-actions>
+            <p>Change list height: <input [(ngModel)]="fitListHeight"></p>
+            <p>Change gutter: <input type="number" [(ngModel)]="ratioGutter"></p>
+          </mat-card-actions>
+        </mat-card>
+      
+        
+      </div>
